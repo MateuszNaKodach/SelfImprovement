@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class JsonSerializer {
 
-    public String serialize(Object object) throws JsonSerializeException {
+    public static String serialize(Object object) throws JsonSerializeException {
         try {
             return trySerialize(object);
         } catch (IllegalAccessException e) {
@@ -16,7 +16,7 @@ public class JsonSerializer {
         }
     }
 
-    private String trySerialize(Object object) throws IllegalAccessException {
+    private static String trySerialize(Object object) throws IllegalAccessException {
         Class<?> objectClass = Objects.requireNonNull(object).getClass();
         Map<String, String> jsonElements = new HashMap<>();
 
