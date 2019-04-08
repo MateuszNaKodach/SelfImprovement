@@ -4,8 +4,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class ReflectionApiSpecification {
 
@@ -72,22 +74,50 @@ class ReflectionApiSpecification {
 
 
     @Nested
-    class GivenPrimitiveBooleanClass{
+    class GivenPrimitiveBooleanClass {
 
         Class<?> clazz = boolean.class;
 
         @Nested
-        class WhenCompareToBooleanObjectClass{
+        class WhenCompareToBooleanObjectClass {
 
             @Test
-            void classesShouldNotBeEquals(){
+            void classesShouldNotBeEquals() {
                 assertNotEquals(Boolean.class, clazz);
 
             }
         }
     }
 
-    
+
+    @Nested
+    class GivenExampleClassWithInheritance {
+
+        @Nested
+        class WhenGetClassesIsInvoked {
+
+            @Test
+            void shouldReturnOnlyPublicMemberClass() {
+                List<Class<?>> classes = Arrays.asList(Inherited.class.getClasses());
+                assertEquals(1, classes.size());
+                assertTrue(classes.contains(Inherited.PublicMemberClass.class));
+            }
+        }
+
+        @Nested
+        class WhenGetDeclaredClassesIsInvoked {
+
+            @DisplayName("should return all of the classes interfaces, and enums that are explicitly declared in this class. Also private classes")
+            @Test
+            void shouldReturnAllOfTheClassesInterfacesAndEnumsThatAreExpilicitlyDeclaredInThisClass() {
+                final var classes = Arrays.asList(Inherited.class.getDeclaredClasses());
+                assertEquals(3, classes.size());
+                assertTrue(classes.contains(Inherited.PublicMemberClass.class));
+                assertTrue(classes.contains(Inherited.MemberClass.class));
+            }
+        }
+        
+    }
 
 
 }
