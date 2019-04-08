@@ -1,6 +1,6 @@
 package com.github.nowakprojects.personaleducation.oracletutorial.reflectionapi.classes;
 
-public class Inherited extends Parent {
+public class Example extends Parent {
     public String test;
 
     public class PublicMemberClass{

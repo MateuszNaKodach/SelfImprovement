@@ -98,9 +98,9 @@ class ReflectionApiSpecification {
 
             @Test
             void shouldReturnOnlyPublicMemberClass() {
-                List<Class<?>> classes = Arrays.asList(Inherited.class.getClasses());
+                List<Class<?>> classes = Arrays.asList(Example.class.getClasses());
                 assertEquals(1, classes.size());
-                assertTrue(classes.contains(Inherited.PublicMemberClass.class));
+                assertTrue(classes.contains(Example.PublicMemberClass.class));
             }
         }
 
@@ -110,13 +110,13 @@ class ReflectionApiSpecification {
             @DisplayName("should return all of the classes interfaces, and enums that are explicitly declared in this class. Also private classes")
             @Test
             void shouldReturnAllOfTheClassesInterfacesAndEnumsThatAreExpilicitlyDeclaredInThisClass() {
-                final var classes = Arrays.asList(Inherited.class.getDeclaredClasses());
+                final var classes = Arrays.asList(Example.class.getDeclaredClasses());
                 assertEquals(3, classes.size());
-                assertTrue(classes.contains(Inherited.PublicMemberClass.class));
-                assertTrue(classes.contains(Inherited.MemberClass.class));
+                assertTrue(classes.contains(Example.PublicMemberClass.class));
+                assertTrue(classes.contains(Example.MemberClass.class));
             }
         }
-        
+
     }
 
 
