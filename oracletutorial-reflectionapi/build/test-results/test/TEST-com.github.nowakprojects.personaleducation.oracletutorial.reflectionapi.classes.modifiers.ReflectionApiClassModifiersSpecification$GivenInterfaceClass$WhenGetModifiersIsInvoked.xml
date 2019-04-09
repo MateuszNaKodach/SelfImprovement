@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.nowakprojects.personaleducation.oracletutorial.reflectionapi.classes.modifiers.ReflectionApiClassModifiersSpecification$GivenInterfaceClass$WhenGetModifiersIsInvoked" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-08T22:17:34" hostname="MNowakLatitude3570" time="0.057">
+  <properties/>
+  <testcase name="then result should always contains &quot;abstract&quot; modifier()" classname="com.github.nowakprojects.personaleducation.oracletutorial.reflectionapi.classes.modifiers.ReflectionApiClassModifiersSpecification$GivenInterfaceClass$WhenGetModifiersIsInvoked" time="0.057"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
