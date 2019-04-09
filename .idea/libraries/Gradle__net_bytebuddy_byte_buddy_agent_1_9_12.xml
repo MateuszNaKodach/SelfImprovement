@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.bytebuddy:byte-buddy-agent:1.9.12">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.9.12/e00a8edb67b99217cab8ade01f1f1183c15d669e/byte-buddy-agent-1.9.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.9.12/62a925c578e975612fabeecee01a98a784466ecb/byte-buddy-agent-1.9.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

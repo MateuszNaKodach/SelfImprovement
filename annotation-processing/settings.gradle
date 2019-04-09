@@ -1,0 +1,5 @@
+rootProject.name = 'annotation-processing'
+
+include 'annotation-processor'
+include 'annotation-client'
+

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="writingyourownspringbootstarter:test" external.linked.project.path="$MODULE_DIR$/../../writingyourownspringbootstarter" external.root.project.path="$MODULE_DIR$/../../writingyourownspringbootstarter" external.system.id="GRADLE" external.system.module.group="com.github.nowakprojects" external.system.module.type="sourceSet" external.system.module.version="0.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="ExternalSystem" linkedProjectPath="$MODULE_DIR$/../../annotation-processing" rootProjectPath="$MODULE_DIR$/../../annotation-processing" />
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration />
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.8" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-java-parameters -Xjsr305=strict" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../writingyourownspringbootstarter/build/classes/kotlin/test" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.1.4.RELEASE/6d19808f14c6d867eef42ea48bf78c37da1d6275/spring-boot-starter-test-2.1.4.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.1.4.RELEASE/8fa436ef4e273cb476d5dc3aa73701a8837460af/spring-boot-starter-2.1.4.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.1.4.RELEASE/6321ef3b715ffa5cfedcd98bf58ba1e8596d17e7/spring-boot-test-autoconfigure-2.1.4.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.4.RELEASE/d5f8b3f7835a23b4dfd8d1489d265c1e426e317b/spring-boot-autoconfigure-2.1.4.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.21/d0d5ff2ac2ebd8a42697af41e20fc225a23c5d3b/kotlin-reflect-1.3.21.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.3.21/d0634d54452abc421db494ad32dd215e6591c49f/kotlin-stdlib-jdk8-1.3.21.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.1.4.RELEASE/a409d8e6aa654520e7dc7e92332b307a8bf4acdb/spring-boot-test-2.1.4.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.1.4.RELEASE/5ad0355a8c810b32b9221b9b92746b51c983337f/spring-boot-2.1.4.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.21/d207ce2c9bcf17dc8e51bab4dbfdac4d013e7138/kotlin-stdlib-jdk7-1.3.21.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.4.0/765a4401ceb2dc8d40553c2075eb80a8fa35c2ae/json-path-2.4.0.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.11.1/fdac3217b804d6900fa3650f17b5cb48e620b140/assertj-core-3.11.1.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.23.4/a35b6f8ffcfa786771eac7d7d903429e790fdf3f/mockito-core-2.23.4.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.6.RELEASE/3f419c32390d4adabe431d726996479d799cec0e/spring-test-5.1.6.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.6.RELEASE/7b9e80ab68ee91ca0462a0eb2c58a9d957788b/spring-context-5.1.6.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.1.6.RELEASE/a473d4bca7295f2b90522594e413f9e19107c1d2/spring-aop-5.1.6.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.6.RELEASE/90d2f4bf7eced108de0b5bf617abb2b13a6206a3/spring-beans-5.1.6.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.1.6.RELEASE/50fe4080029e43e7612e50fb4d7c7c43e95bf03c/spring-expression-5.1.6.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.6.RELEASE/9329591e728ef9844911e082e399f4fc3e3ecb37/spring-core-5.1.6.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.6.2/b0461888cdd8d3975ea8a57df96520409cadcb6c/xmlunit-core-2.6.2.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.1.4.RELEASE/2fb669a89cd65b275be20ab755c3742399395dff/spring-boot-starter-logging-2.1.4.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/7396407491352ce4fa30de92efb158adb76b5b/json-smart-2.3.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.11.2/6d37bf7b046c0ce2669f26b99365a2cfa45c4c18/log4j-to-slf4j-2.11.2.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.26/8031352b2bb0a49e67818bf04c027aa92e645d5c/jul-to-slf4j-1.7.26.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.9.12/39050dbbd36862ea87eb9a64158854b04619ccd6/byte-buddy-1.9.12.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.9.12/e00a8edb67b99217cab8ade01f1f1183c15d669e/byte-buddy-agent-1.9.12.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.6.RELEASE/a4ad3c98c7cc31357e94e12772c8e6449522bc5/spring-jcl-5.1.6.RELEASE.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.2/c592b500269bfde36096641b01238a8350f8aa31/accessors-smart-1.2.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.11.2/f5e9a2ffca496057d6891a3de65128efc636e26e/log4j-api-2.11.2.jar:/home/mnowak/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.4/da08b8cce7bbf903602a25a3a163ae252435795/asm-5.0.4.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="writingyourownspringbootstarter" />
+          <option name="jvmTarget" value="1.8" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="friendPaths">
+            <array>
+              <option value="$MODULE_DIR$/../../writingyourownspringbootstarter/build/classes/kotlin/main" />
+              <option value="$MODULE_DIR$/../../writingyourownspringbootstarter/build/classes/java/main" />
+            </array>
+          </option>
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.stereotype.Component" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.transaction.annotation.Transactional" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.scheduling.annotation.Async" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.cache.annotation.Cacheable" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.boot.test.context.SpringBootTest" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.validation.annotation.Validated" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$KOTLIN_BUNDLED$/lib/allopen-compiler-plugin.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output-test url="file://$MODULE_DIR$/../../writingyourownspringbootstarter/out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../writingyourownspringbootstarter/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../writingyourownspringbootstarter/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../writingyourownspringbootstarter/src/test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../writingyourownspringbootstarter/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="writingyourownspringbootstarter.main" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework.boot:spring-boot-configuration-processor:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.3.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-test:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.21" level="project" />
+    <orderEntry type="library" name="Gradle: com.jayway.jsonpath:json-path:2.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.assertj:assertj-core:3.11.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.mockito:mockito-core:2.23.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-library:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.skyscreamer:jsonassert:1.5.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-test:5.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.xmlunit:xmlunit-core:2.6.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: javax.annotation:javax.annotation-api:1.3.2" level="project" />
+    <orderEntry type="library" name="Gradle: net.minidev:json-smart:2.3" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.11.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.yaml:snakeyaml:1.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.26" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.26" level="project" />
+    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy:1.9.12" level="project" />
+    <orderEntry type="library" name="Gradle: net.bytebuddy:byte-buddy-agent:1.9.12" level="project" />
+    <orderEntry type="library" name="Gradle: org.objenesis:objenesis:2.6" level="project" />
+    <orderEntry type="library" name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.1.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: net.minidev:accessors-smart:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.11.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:5.0.4" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="writingyourownspringbootstarter.main" />
+</module>

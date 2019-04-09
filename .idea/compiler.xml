@@ -2,8 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="annotation-processing.annotation-client.main" target="11" />
+      <module name="annotation-processing.annotation-client.test" target="11" />
+      <module name="annotation-processing.annotation-processor.main" target="11" />
+      <module name="annotation-processing.annotation-processor.test" target="11" />
+      <module name="annotation-processor.main" target="11" />
+      <module name="annotation-processor.test" target="11" />
       <module name="learning-annotations.main" target="11" />
       <module name="learning-annotations.test" target="11" />
+      <module name="oracletutorial-reflectionapi.main" target="11" />
+      <module name="oracletutorial-reflectionapi.test" target="11" />
+      <module name="writingyourownspringbootstarter.main" target="1.8" />
+      <module name="writingyourownspringbootstarter.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
