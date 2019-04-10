@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="annotation-processing" external.linked.project.path="$MODULE_DIR$/../../annotation-processing" external.root.project.path="$MODULE_DIR$/../../annotation-processing" external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
-  <component name="ExternalSystem" linkedProjectPath="$MODULE_DIR$/../../annotation-processing" rootProjectPath="$MODULE_DIR$/../../annotation-processing" />
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="" externalSystemModuleVersion="unspecified" linkedProjectId="annotation-processing" linkedProjectPath="$MODULE_DIR$/../../annotation-processing" rootProjectPath="$MODULE_DIR$/../../annotation-processing" />
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../annotation-processing">

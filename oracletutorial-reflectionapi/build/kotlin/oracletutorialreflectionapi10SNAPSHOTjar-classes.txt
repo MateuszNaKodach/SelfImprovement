@@ -1,1 +1,0 @@
-/home/mnowak/GitRepos/PersonalEducation/oracletutorial-reflectionapi/build/classes/java/main/com/github/nowakprojects/personaleducation/oracletutorial/reflectionapi/classes/Foo.class

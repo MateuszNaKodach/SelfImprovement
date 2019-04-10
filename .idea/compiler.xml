@@ -8,6 +8,16 @@
       <module name="annotation-processing.annotation-processor.test" target="11" />
       <module name="annotation-processor.main" target="11" />
       <module name="annotation-processor.test" target="11" />
+      <module name="com.github.nowakprojects.learning-annotations.main" target="11" />
+      <module name="com.github.nowakprojects.learning-annotations.test" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-client.main" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-client.test" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processor.main" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processor.test" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.oracletutorial-reflectionapi.main" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.oracletutorial-reflectionapi.test" target="11" />
+      <module name="com.github.nowakprojects.writingyourownspringbootstarter.main" target="1.8" />
+      <module name="com.github.nowakprojects.writingyourownspringbootstarter.test" target="1.8" />
       <module name="learning-annotations.main" target="11" />
       <module name="learning-annotations.test" target="11" />
       <module name="oracletutorial-reflectionapi.main" target="11" />
