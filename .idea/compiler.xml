@@ -26,6 +26,8 @@
       <module name="learning-annotations.test" target="11" />
       <module name="oracletutorial-reflectionapi.main" target="11" />
       <module name="oracletutorial-reflectionapi.test" target="11" />
+      <module name="spring-with-rabbitmq.main" target="1.8" />
+      <module name="spring-with-rabbitmq.test" target="1.8" />
       <module name="writingyourownspringbootstarter.main" target="1.8" />
       <module name="writingyourownspringbootstarter.test" target="1.8" />
     </bytecodeTargetLevel>

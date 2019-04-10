@@ -46,6 +46,19 @@
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-with-rabbitmq" />
+        <option name="gradleHome" value="$USER_HOME$/.sdkman/candidates/gradle/current" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-with-rabbitmq" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/writingyourownspringbootstarter" />
         <option name="gradleJvm" value="11" />
         <option name="modules">
