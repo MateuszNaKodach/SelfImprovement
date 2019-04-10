@@ -3,9 +3,23 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PersonalEducation.iml" filepath="$PROJECT_DIR$/.idea/PersonalEducation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-processing.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-processing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-processor/annotation-processing.annotation-processor.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-processor/annotation-processing.annotation-processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-processor/annotation-processing.annotation-processor.main.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-processor/annotation-processing.annotation-processor.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-processor/annotation-processing.annotation-processor.test.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-processor/annotation-processing.annotation-processor.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.iml" filepath="$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.main.iml" filepath="$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.test.iml" filepath="$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.iml" filepath="$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.test.iml" />
     </modules>
   </component>
 </project>
