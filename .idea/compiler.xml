@@ -12,6 +12,10 @@
       <module name="com.github.nowakprojects.learning-annotations.test" target="11" />
       <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-client.main" target="11" />
       <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-client.test" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processing.annotation-client.main" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processing.annotation-client.test" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processing.annotation-processor.main" target="11" />
+      <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processing.annotation-processor.test" target="11" />
       <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processor.main" target="11" />
       <module name="com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-processor.test" target="11" />
       <module name="com.github.nowakprojects.personaleducation.oracletutorial-reflectionapi.main" target="11" />
