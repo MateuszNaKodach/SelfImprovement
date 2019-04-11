@@ -1,3 +1,11 @@
 spring:
   rabbitmq:
     host: 217.182.73.245
+  profiles:
+    active: usage_message
+logging:
+  level:
+    org: TRACE
+tutorial:
+  client:
+    duration: 10000
