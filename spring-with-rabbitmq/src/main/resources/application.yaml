@@ -1,0 +1,5 @@
+spring:
+  rabbitmq:
+    host: 17.182.73.245
+    password: education
+    username: education
