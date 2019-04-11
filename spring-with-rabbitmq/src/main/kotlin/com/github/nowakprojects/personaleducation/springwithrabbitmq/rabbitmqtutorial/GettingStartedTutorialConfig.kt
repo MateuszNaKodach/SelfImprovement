@@ -18,9 +18,11 @@ internal class GettingStartedTutorialConfig {
     @Bean
     fun hello() = Queue("hello")
 
+    @Bean
     @Profile(RECEIVER)
     fun receiver() = TutorialReceiver()
 
+    @Bean
     @Profile(SENDER)
     fun sender(template: RabbitTemplate, queue: Queue) = TutorialSender(template, queue)
 

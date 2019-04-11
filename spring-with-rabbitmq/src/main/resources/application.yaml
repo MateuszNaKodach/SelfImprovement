@@ -5,7 +5,7 @@ spring:
     active: usage_message
 logging:
   level:
-    org: TRACE
+    org: ERROR
 tutorial:
   client:
-    duration: 10000
+    duration: 100000
