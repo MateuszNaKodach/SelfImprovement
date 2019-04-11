@@ -1,5 +1,3 @@
 spring:
   rabbitmq:
-    host: 17.182.73.245
-    password: education
-    username: education
+    host: 217.182.73.245
