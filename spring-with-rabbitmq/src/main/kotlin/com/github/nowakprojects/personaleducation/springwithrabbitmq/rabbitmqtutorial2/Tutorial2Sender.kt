@@ -8,8 +8,6 @@ import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
 import java.util.concurrent.atomic.AtomicInteger
 
-@Component
-@Profile(SENDER)
 class Tutorial2Sender(val template: RabbitTemplate, val queue: Queue) {
 
     private val dots = AtomicInteger(0)
