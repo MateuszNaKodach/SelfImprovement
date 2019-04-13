@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="learning-annotations" external.linked.project.path="$MODULE_DIR$/../../learning-annotations" external.root.project.path="$MODULE_DIR$/../../learning-annotations" external.system.id="GRADLE" external.system.module.group="com.github.nowakprojects" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="ExternalSystem" linkedProjectPath="$MODULE_DIR$/../../annotation-processing" rootProjectPath="$MODULE_DIR$/../../annotation-processing" />
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="com.github.nowakprojects" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId="learning-annotations" linkedProjectPath="$MODULE_DIR$/../../learning-annotations" rootProjectPath="$MODULE_DIR$/../../learning-annotations" />
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../learning-annotations">
