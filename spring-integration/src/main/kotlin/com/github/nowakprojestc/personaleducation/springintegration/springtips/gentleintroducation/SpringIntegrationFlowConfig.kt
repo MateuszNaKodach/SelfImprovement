@@ -20,6 +20,7 @@ import org.springframework.messaging.support.MessageBuilder
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.PrintStream
+import java.util.concurrent.TimeUnit
 
 @Profile("gentle-introduction")
 @Configuration
@@ -39,7 +40,7 @@ internal class SpringIntegrationFlowConfig {
 
     @Bean
     fun files(
-            @Value(value = "gentle-introduction.file-directory") fileDirectory: File,
+            @Value(value = "\${gentle-introduction.file-directory}") fileDirectory: File,
             environment: Environment,
             ftpSessionFactory: DefaultFtpSessionFactory
     ): IntegrationFlow {
@@ -49,7 +50,7 @@ internal class SpringIntegrationFlowConfig {
                 PrintStream(outputStream).use { printStream ->
                     val imageBanner = ImageBanner(FileSystemResource(source))
                     imageBanner.printBanner(environment, javaClass, printStream)
-                    MessageBuilder.withPayload(outputStream.toByteArray().toString())
+                    MessageBuilder.withPayload(String(outputStream.toByteArray()))
                             .setHeader(FileHeaders.FILENAME, source.absoluteFile.name)
                             .build()
                 }
@@ -60,12 +61,12 @@ internal class SpringIntegrationFlowConfig {
                 Files.inboundAdapter(fileDirectory)
                         .autoCreateDirectory(true)
                         .preventDuplicates(true)
-                        .patternFilter("*.jpg")
-                )
+                        .patternFilter("*.jpg")) { poller -> poller.poller { metadata -> metadata.fixedRate(1, TimeUnit.SECONDS) } }
                 .transform(File::class.java, fileStringGenericTransformer)
                 .handle(
                         Ftp.outboundAdapter(ftpSessionFactory)
-                                .fileNameGenerator { message -> (message.headers[FileHeaders.FILENAME] as String).split("\\.")[0] + ".txt" }
+                                .remoteDirectory("")
+                                .fileNameGenerator { message -> (message.headers[FileHeaders.FILENAME] as String).split(".")[0] + ".txt" }
                 ).get()
     }
 
