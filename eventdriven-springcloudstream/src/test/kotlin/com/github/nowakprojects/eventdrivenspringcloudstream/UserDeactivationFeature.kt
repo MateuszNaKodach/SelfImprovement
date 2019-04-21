@@ -9,7 +9,7 @@ object UserDeactivationFeature : Spek(
         {
             Feature("User deactivation") {
 
-                val user by memoized { User.new() }
+                val user by memoized { User.withNickname("Antoni") }
 
                 Scenario("Deactivated user cannot change nickname") {
 
@@ -51,7 +51,7 @@ object UserDeactivationFeature : Spek(
 
                 Scenario("New user can be activated") {
 
-                    When("try to activate new user") {
+                    When("try to activate withNickname user") {
                         user.activate()
                     }
 
