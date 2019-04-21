@@ -32,6 +32,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" />

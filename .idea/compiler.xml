@@ -24,6 +24,8 @@
       <module name="com.github.nowakprojects.personaleducation.spring-with-rabbitmq.test" target="1.8" />
       <module name="com.github.nowakprojects.writingyourownspringbootstarter.main" target="1.8" />
       <module name="com.github.nowakprojects.writingyourownspringbootstarter.test" target="1.8" />
+      <module name="com.github.nowakprojestc.personaleducation.spring-integration.main" target="1.8" />
+      <module name="com.github.nowakprojestc.personaleducation.spring-integration.test" target="1.8" />
       <module name="learning-annotations.main" target="11" />
       <module name="learning-annotations.test" target="11" />
       <module name="oracletutorial-reflectionapi.main" target="11" />
