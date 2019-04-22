@@ -1,5 +1,6 @@
 package com.github.nowakprojects.eventdrivenspringcloudstream
 
+import java.time.Instant
 import java.util.*
 
 internal class User private constructor(
@@ -36,7 +37,11 @@ internal class User private constructor(
         if (isDeactivated()) {
             throw IllegalStateException("Nickname cannot be changed if user is deactivated!")
         }
-        nickname = newNickname
+        userNicknameChanged(UserNicknameChanged(newNickname, Instant.now()))
+    }
+
+    fun userNicknameChanged(event: UserNicknameChanged){
+
     }
 
     fun isActivated() = state == State.ACTIVATED

@@ -35,12 +35,18 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventdriven-springcloudstream/eventdriven-springcloudstream.iml" filepath="$PROJECT_DIR$/eventdriven-springcloudstream/eventdriven-springcloudstream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.iml" filepath="$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.main.iml" filepath="$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.test.iml" filepath="$PROJECT_DIR$/.idea/modules/oracletutorial-reflectionapi.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-integration.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-integration.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-integration.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-integration.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-integration.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-with-rabbitmq/spring-with-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-with-rabbitmq/spring-with-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.test.iml" />
