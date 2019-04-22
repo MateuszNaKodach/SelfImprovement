@@ -9,11 +9,11 @@ internal class User private constructor(
         private var state: State = State.INITIALIZED
 ) {
 
+    private val changes = mutableListOf<DomainEvent>()
 
     private enum class State {
         INITIALIZED, ACTIVATED, DEACTIVATED
     }
-
 
     companion object {
         fun withNickname(nickname: String) = User(UUID.randomUUID(), nickname)
@@ -23,14 +23,24 @@ internal class User private constructor(
         if (isActivated()) {
             throw IllegalStateException()
         }
+        userActivated(UserActivated(Instant.now()))
+    }
+
+    private fun userActivated(event: UserActivated) {
         state = State.ACTIVATED
+        changes.add(event)
     }
 
     fun deactivate() {
         if (isDeactivated()) {
             throw IllegalStateException()
         }
+        userDeactivated(UserDeactivated(Instant.now()))
+    }
+
+    private fun userDeactivated(event: UserDeactivated) {
         state = State.DEACTIVATED
+        changes.add(event)
     }
 
     fun changeNicknameTo(newNickname: String) {
@@ -41,7 +51,8 @@ internal class User private constructor(
     }
 
     fun userNicknameChanged(event: UserNicknameChanged){
-
+        nickname = event.newNickname
+        changes.add(event)
     }
 
     fun isActivated() = state == State.ACTIVATED
