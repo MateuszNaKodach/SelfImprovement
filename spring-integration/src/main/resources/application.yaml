@@ -1,2 +1,6 @@
 gentle-introduction:
   file-directory: D:\GitRepos\PersonalEducation\tmp
+
+spring:
+  rabbitmq:
+    host: 217.182.73.245
