@@ -10,11 +10,15 @@ import org.springframework.cloud.stream.messaging.Source
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
+import org.springframework.scheduling.annotation.EnableScheduling
+import org.springframework.scheduling.annotation.Scheduled
+import java.util.concurrent.atomic.AtomicInteger
 import javax.annotation.PostConstruct
 
+@EnableScheduling
 @EnableBinding(Source::class)
 @SpringBootApplication
-@ComponentScan(basePackageClasses = [TimeProvider::class])
+@ComponentScan(basePackageClasses = [TimeProvider::class, EventdrivenSpringcloudstreamApplication::class])
 @EnableConfigurationProperties(CurrentTimeProperties::class)
 class EventdrivenSpringcloudstreamApplication
 
@@ -33,14 +37,13 @@ internal class AppConfiguration {
 @Configuration
 internal class RandomUsers(val repository: UserRepository, val timeProvider: TimeProvider) {
 
+    var usersCount = AtomicInteger(0)
 
-    @PostConstruct
+    @Scheduled(fixedRate = 2000L)
     fun saveRandomUsers() {
-        (0..10).forEach {
-            User.withNickname("Nickname$it", timeProvider)
-                    .also { user ->
-                        repository.save(user)
-                    }
-        }
+        User.withNickname("Nickname${usersCount.getAndIncrement()}", timeProvider)
+                .also { user ->
+                    repository.save(user)
+                }
     }
 }
