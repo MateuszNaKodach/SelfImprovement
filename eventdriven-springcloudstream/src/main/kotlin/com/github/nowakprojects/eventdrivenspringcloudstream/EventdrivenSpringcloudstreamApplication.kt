@@ -2,6 +2,7 @@ package com.github.nowakprojects.eventdrivenspringcloudstream
 
 import com.github.nowakprojects.timetraveler.CurrentTimeProperties
 import com.github.nowakprojects.timetraveler.TimeProvider
+import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
@@ -17,7 +18,6 @@ import java.util.concurrent.atomic.AtomicInteger
 import javax.annotation.PostConstruct
 
 @EnableScheduling
-@EnableBinding(Source::class)
 @SpringBootApplication
 @ComponentScan(basePackageClasses = [TimeProvider::class, EventdrivenSpringcloudstreamApplication::class])
 @EnableConfigurationProperties(CurrentTimeProperties::class)
@@ -38,7 +38,10 @@ internal class AppConfiguration {
 @Configuration
 internal class RandomUsers(val repository: UserRepository, val timeProvider: TimeProvider, val eventPublisher: EventPublisher) {
 
+    private val log = LoggerFactory.getLogger(this::class.java)
+
     var usersCount = AtomicInteger(0)
+
 
     @Scheduled(fixedRate = 2000L)
     fun saveRandomUsers() {
@@ -49,7 +52,13 @@ internal class RandomUsers(val repository: UserRepository, val timeProvider: Tim
     }
 
     @Scheduled(fixedRate = 1000L)
+    fun publishString() {
+        publish("SampleString")
+    }
+
     @Publisher(channel = Source.OUTPUT)
-    fun publish() =
-           "SampleString"
+    fun publish(sample: String) =
+            sample.also {
+                log.info("about to send: {}", it)
+            }
 }

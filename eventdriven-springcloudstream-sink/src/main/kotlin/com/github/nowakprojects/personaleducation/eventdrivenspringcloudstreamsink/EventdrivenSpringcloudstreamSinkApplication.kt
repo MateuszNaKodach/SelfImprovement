@@ -11,7 +11,6 @@ import org.springframework.cloud.stream.messaging.Sink
 import org.springframework.stereotype.Component
 import javax.annotation.PostConstruct
 
-@EnableBinding(Sink::class)
 @SpringBootApplication
 class EventdrivenSpringcloudstreamSinkApplication
 
@@ -19,6 +18,7 @@ fun main(args: Array<String>) {
     runApplication<EventdrivenSpringcloudstreamSinkApplication>(*args)
 }
 
+@EnableBinding(Sink::class)
 @Component
 internal class EventHandler {
 
@@ -35,17 +35,18 @@ internal class EventHandler {
     }
 
     @StreamListener(Sink.INPUT)
+    fun handleEvent(event: UserDomainEvent) {
+        log.info("received: {}", event)
+    }
+
+    @StreamListener(Sink.INPUT)
     fun handleEvent(event: String) {
         log.info("received: {}", event)
     }
 
+    /*
     @StreamListener(Sink.INPUT)
     fun handleEvent(event: UserDomainEvent.UserNicknameChanged) {
-        log.info("received: {}", event)
-    }
-
-    @StreamListener(Sink.INPUT)
-    fun handleEvent(event: UserDomainEvent) {
         log.info("received: {}", event)
     }
 
@@ -57,6 +58,6 @@ internal class EventHandler {
     @StreamListener(Sink.INPUT)
     fun handleEvent(event: UserDomainEvent.UserActivated) {
         log.info("received: {}", event)
-    }
+    }*/
 
 }
