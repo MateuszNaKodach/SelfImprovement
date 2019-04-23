@@ -1,13 +1,11 @@
 server:
-  port: 8761
-
-
+  port: 8658
 spring:
   rabbitmq:
     host: 217.182.73.245
   cloud:
     stream:
       bindings:
-        output:
+        input:
           destination: eventsourced-users
           group: noname
