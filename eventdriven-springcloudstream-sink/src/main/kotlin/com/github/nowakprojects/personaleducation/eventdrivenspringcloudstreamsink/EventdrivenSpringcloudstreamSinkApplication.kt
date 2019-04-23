@@ -1,13 +1,13 @@
 package com.github.nowakprojects.personaleducation.eventdrivenspringcloudstreamsink
 
-import com.github.nowakprojects.eventdrivenspringcloudstream.DomainEvent
+import com.github.nowakprojects.eventdrivenspringcloudstream.Channels
 import com.github.nowakprojects.eventdrivenspringcloudstream.UserDomainEvent
 import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.cloud.stream.annotation.EnableBinding
 import org.springframework.cloud.stream.annotation.StreamListener
-import org.springframework.cloud.stream.messaging.Sink
+import org.springframework.integration.annotation.Publisher
 import org.springframework.stereotype.Component
 import javax.annotation.PostConstruct
 
@@ -18,9 +18,9 @@ fun main(args: Array<String>) {
     runApplication<EventdrivenSpringcloudstreamSinkApplication>(*args)
 }
 
-@EnableBinding(Sink::class)
+@EnableBinding(Channels::class)
 @Component
-internal class EventHandler {
+class EventHandler(private val channels: Channels) {
 
     private val log = LoggerFactory.getLogger(this::class.java)
 
@@ -29,35 +29,25 @@ internal class EventHandler {
         log.info("EventHandler created!")
     }
 
-    @StreamListener(Sink.INPUT)
-    fun handleEvent(event: DomainEvent) {
-        log.info("received: {}", event)
-    }
-
-    @StreamListener(Sink.INPUT)
+    @StreamListener("users")
     fun handleEvent(event: UserDomainEvent) {
-        log.info("received: {}", event)
+        when (event) {
+            is UserDomainEvent.UserDeactivated -> {
+                publishToPayments("cancelPayment")
+                publishToShipments("cancelShipment")
+                publishToCommunication("sendEmail")
+            }
+            is UserDomainEvent.UserActivated -> TODO()
+            is UserDomainEvent.UserNicknameChanged -> TODO()
+        }
     }
 
-    @StreamListener(Sink.INPUT)
-    fun handleEvent(event: String) {
-        log.info("received: {}", event)
-    }
+    @Publisher("payments")
+    fun publishToPayments(command: String) = command
 
-    /*
-    @StreamListener(Sink.INPUT)
-    fun handleEvent(event: UserDomainEvent.UserNicknameChanged) {
-        log.info("received: {}", event)
-    }
+    @Publisher("shipments")
+    fun publishToShipments(command: String) = command
 
-    @StreamListener(Sink.INPUT)
-    fun handleEvent(event: UserDomainEvent.UserDeactivated) {
-        log.info("received: {}", event)
-    }
-
-    @StreamListener(Sink.INPUT)
-    fun handleEvent(event: UserDomainEvent.UserActivated) {
-        log.info("received: {}", event)
-    }*/
-
+    @Publisher("shipments")
+    fun publishToCommunication(command: String) = command
 }
