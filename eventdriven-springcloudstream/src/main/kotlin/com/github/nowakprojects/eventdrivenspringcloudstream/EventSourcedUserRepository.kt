@@ -6,7 +6,9 @@ import java.time.Instant
 import java.util.*
 import java.util.concurrent.ConcurrentHashMap
 
-internal class EventSourcedUserRepository(private val timeProvider: TimeProvider) : UserRepository {
+internal class EventSourcedUserRepository(
+        private val timeProvider: TimeProvider,
+        private val eventPublisher: EventPublisher? = null) : UserRepository {
 
     private val users = ConcurrentHashMap<UUID, List<UserDomainEvent>>()
 
@@ -15,6 +17,7 @@ internal class EventSourcedUserRepository(private val timeProvider: TimeProvider
         val persistedChanges = getEventsUpTo(user.uuid, timeProvider.currentInstant)
         users[user.uuid] = newChanges.plus(persistedChanges)
         user.flushChanges()
+        newChanges.forEach { eventPublisher?.publish(it) }
     }
 
     override fun find(uuid: UUID): User? =

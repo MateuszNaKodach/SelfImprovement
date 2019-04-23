@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConfigurationPropertiesBinding;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
@@ -22,7 +23,6 @@ import static java.util.Objects.nonNull;
  *
  * @see TimeProvider
  */
-@EnableConfigurationProperties(CurrentTimeProperties.class)
 @ConfigurationProperties(prefix = CurrentTimeProperties.PREFIX)
 @Validated
 @Setter
