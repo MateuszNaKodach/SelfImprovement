@@ -1,7 +1,9 @@
 package com.github.nowakprojects.eventdrivenspringcloudstream
 
+import com.github.nowakprojects.timetraveler.TestClockTimeProvider
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.gherkin.Feature
+import java.time.LocalTime
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
@@ -9,7 +11,9 @@ object UserDeactivationFeature : Spek(
         {
             Feature("User deactivation") {
 
-                val user by memoized { User.withNickname("Antoni") }
+                val timeProvider: TestClockTimeProvider
+                        by memoized { TestClockTimeProvider.withFixedTime(LocalTime.of(10, 0)) }
+                val user by memoized { User.withNickname("Antoni", timeProvider) }
 
                 Scenario("Deactivated user cannot change nickname") {
 

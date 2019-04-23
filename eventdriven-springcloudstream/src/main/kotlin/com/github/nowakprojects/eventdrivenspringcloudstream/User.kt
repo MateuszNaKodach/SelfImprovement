@@ -1,11 +1,13 @@
 package com.github.nowakprojects.eventdrivenspringcloudstream
 
-import java.time.Instant
+import com.github.nowakprojects.timetraveler.TimeProvider
 import java.util.*
 
 internal class User private constructor(
         val uuid: UUID,
         private var nickname: String,
+        @Transient
+        private var timeProvider: TimeProvider,
         private var state: State = State.INITIALIZED
 ) {
 
@@ -16,16 +18,16 @@ internal class User private constructor(
     }
 
     companion object {
-        fun withUUID(uuid: UUID) = User(uuid, "")
+        fun withUUID(uuid: UUID, timeProvider: TimeProvider) = User(uuid, "", timeProvider)
 
-        fun withNickname(nickname: String) = User(UUID.randomUUID(), nickname)
+        fun withNickname(nickname: String, timeProvider: TimeProvider) = User(UUID.randomUUID(), nickname, timeProvider)
 
-        fun recreateFrom(uuid: UUID, domainEvents: List<UserDomainEvent>) =
-                domainEvents.fold(withUUID(uuid)) { acc: User, userDomainEvent: UserDomainEvent -> acc.handleEvent(userDomainEvent) }
+        fun recreateFrom(uuid: UUID, domainEvents: List<UserDomainEvent>, timeProvider: TimeProvider) =
+                domainEvents.fold(withUUID(uuid, timeProvider)) { acc: User, userDomainEvent: UserDomainEvent -> acc.handleEvent(userDomainEvent) }
     }
 
     init {
-        userNicknameChanged(UserDomainEvent.UserNicknameChanged(nickname, Instant.now()))
+        userNicknameChanged(UserDomainEvent.UserNicknameChanged(nickname, timeProvider.currentInstant))
     }
 
     fun handleEvent(event: UserDomainEvent): User =
@@ -40,7 +42,7 @@ internal class User private constructor(
         if (isActivated()) {
             throw IllegalStateException()
         }
-        userActivated(UserDomainEvent.UserActivated(Instant.now()))
+        userActivated(UserDomainEvent.UserActivated(timeProvider.currentInstant))
     }
 
     private fun userActivated(event: UserDomainEvent.UserActivated) = apply {
@@ -52,7 +54,7 @@ internal class User private constructor(
         if (isDeactivated()) {
             throw IllegalStateException()
         }
-        userDeactivated(UserDomainEvent.UserDeactivated(Instant.now()))
+        userDeactivated(UserDomainEvent.UserDeactivated(timeProvider.currentInstant))
     }
 
     private fun userDeactivated(event: UserDomainEvent.UserDeactivated) = apply {
@@ -64,7 +66,7 @@ internal class User private constructor(
         if (isDeactivated()) {
             throw IllegalStateException("Nickname cannot be changed if user is deactivated!")
         }
-        userNicknameChanged(UserDomainEvent.UserNicknameChanged(newNickname, Instant.now()))
+        userNicknameChanged(UserDomainEvent.UserNicknameChanged(newNickname, timeProvider.currentInstant))
     }
 
     fun userNicknameChanged(event: UserDomainEvent.UserNicknameChanged) = apply {
