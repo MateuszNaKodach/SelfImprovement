@@ -11,3 +11,7 @@ spring:
         output:
           destination: eventsourced-users
           group: noname
+
+logging:
+  level:
+    org.springframework.cloud.stream: TRACE

@@ -1,6 +1,7 @@
 package com.github.nowakprojects.personaleducation.eventdrivenspringcloudstreamsink
 
 import com.github.nowakprojects.eventdrivenspringcloudstream.DomainEvent
+import com.github.nowakprojects.eventdrivenspringcloudstream.UserDomainEvent
 import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -24,12 +25,37 @@ internal class EventHandler {
     private val log = LoggerFactory.getLogger(this::class.java)
 
     @PostConstruct
-    fun log(){
+    fun log() {
         log.info("EventHandler created!")
     }
 
     @StreamListener(Sink.INPUT)
     fun handleEvent(event: DomainEvent) {
+        log.info("received: {}", event)
+    }
+
+    @StreamListener(Sink.INPUT)
+    fun handleEvent(event: String) {
+        log.info("received: {}", event)
+    }
+
+    @StreamListener(Sink.INPUT)
+    fun handleEvent(event: UserDomainEvent.UserNicknameChanged) {
+        log.info("received: {}", event)
+    }
+
+    @StreamListener(Sink.INPUT)
+    fun handleEvent(event: UserDomainEvent) {
+        log.info("received: {}", event)
+    }
+
+    @StreamListener(Sink.INPUT)
+    fun handleEvent(event: UserDomainEvent.UserDeactivated) {
+        log.info("received: {}", event)
+    }
+
+    @StreamListener(Sink.INPUT)
+    fun handleEvent(event: UserDomainEvent.UserActivated) {
         log.info("received: {}", event)
     }
 

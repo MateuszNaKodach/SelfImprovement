@@ -10,6 +10,7 @@ import org.springframework.cloud.stream.messaging.Source
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
+import org.springframework.integration.annotation.Publisher
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled
 import java.util.concurrent.atomic.AtomicInteger
@@ -35,7 +36,7 @@ internal class AppConfiguration {
 }
 
 @Configuration
-internal class RandomUsers(val repository: UserRepository, val timeProvider: TimeProvider) {
+internal class RandomUsers(val repository: UserRepository, val timeProvider: TimeProvider, val eventPublisher: EventPublisher) {
 
     var usersCount = AtomicInteger(0)
 
@@ -46,4 +47,9 @@ internal class RandomUsers(val repository: UserRepository, val timeProvider: Tim
                     repository.save(user)
                 }
     }
+
+    @Scheduled(fixedRate = 1000L)
+    @Publisher(channel = Source.OUTPUT)
+    fun publish() =
+           "SampleString"
 }
