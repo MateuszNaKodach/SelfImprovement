@@ -9,24 +9,41 @@ internal class User private constructor(
         private var state: State = State.INITIALIZED
 ) {
 
-    private val changes = mutableListOf<DomainEvent>()
+    private val changes = mutableListOf<UserDomainEvent>()
 
     private enum class State {
         INITIALIZED, ACTIVATED, DEACTIVATED
     }
 
     companion object {
+        fun withUUID(uuid: UUID) = User(uuid, "")
+
         fun withNickname(nickname: String) = User(UUID.randomUUID(), nickname)
+
+        fun recreateFrom(uuid: UUID, domainEvents: List<UserDomainEvent>) =
+                domainEvents.fold(withUUID(uuid)) { acc: User, userDomainEvent: UserDomainEvent -> acc.handleEvent(userDomainEvent) }
     }
+
+    init {
+        userNicknameChanged(UserDomainEvent.UserNicknameChanged(nickname, Instant.now()))
+    }
+
+    fun handleEvent(event: UserDomainEvent): User =
+            when (event) {
+                is UserDomainEvent.UserActivated -> userActivated(event)
+                is UserDomainEvent.UserDeactivated -> userDeactivated(event)
+                is UserDomainEvent.UserNicknameChanged -> userNicknameChanged(event)
+            }
+
 
     fun activate() {
         if (isActivated()) {
             throw IllegalStateException()
         }
-        userActivated(UserActivated(Instant.now()))
+        userActivated(UserDomainEvent.UserActivated(Instant.now()))
     }
 
-    private fun userActivated(event: UserActivated) {
+    private fun userActivated(event: UserDomainEvent.UserActivated) = apply {
         state = State.ACTIVATED
         changes.add(event)
     }
@@ -35,10 +52,10 @@ internal class User private constructor(
         if (isDeactivated()) {
             throw IllegalStateException()
         }
-        userDeactivated(UserDeactivated(Instant.now()))
+        userDeactivated(UserDomainEvent.UserDeactivated(Instant.now()))
     }
 
-    private fun userDeactivated(event: UserDeactivated) {
+    private fun userDeactivated(event: UserDomainEvent.UserDeactivated) = apply {
         state = State.DEACTIVATED
         changes.add(event)
     }
@@ -47,10 +64,10 @@ internal class User private constructor(
         if (isDeactivated()) {
             throw IllegalStateException("Nickname cannot be changed if user is deactivated!")
         }
-        userNicknameChanged(UserNicknameChanged(newNickname, Instant.now()))
+        userNicknameChanged(UserDomainEvent.UserNicknameChanged(newNickname, Instant.now()))
     }
 
-    fun userNicknameChanged(event: UserNicknameChanged){
+    fun userNicknameChanged(event: UserDomainEvent.UserNicknameChanged) = apply {
         nickname = event.newNickname
         changes.add(event)
     }
@@ -58,6 +75,8 @@ internal class User private constructor(
     fun isActivated() = state == State.ACTIVATED
 
     fun isDeactivated() = state == State.DEACTIVATED
+
+    fun getChanges() = listOf<UserDomainEvent>(*changes.toTypedArray())
 
     fun getNickname() = nickname
     override fun equals(other: Any?): Boolean {
@@ -75,5 +94,8 @@ internal class User private constructor(
         return uuid.hashCode()
     }
 
+    fun flushChanges() {
+        changes.clear()
+    }
 
 }
