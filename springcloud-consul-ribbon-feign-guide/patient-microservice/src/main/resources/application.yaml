@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: PatientService
+  profiles:
+    active: dev
+  cloud:
+    consul:
+      ribbon:
+        enabled: true
+
+services:
+  volunteer:
+    url: http://VolunteerService/vs
+
+server:
+  port: 8082
+

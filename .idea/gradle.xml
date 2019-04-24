@@ -86,6 +86,32 @@
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud-consul-ribbon-feign-guide/patient-microservice" />
+        <option name="gradleHome" value="C:/Program Files/gradle-4.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/springcloud-consul-ribbon-feign-guide/patient-microservice" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/springcloud-consul-ribbon-feign-guide/volounteer-microservice" />
+        <option name="gradleHome" value="C:/Program Files/gradle-4.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/springcloud-consul-ribbon-feign-guide/volounteer-microservice" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/writingyourownspringbootstarter" />
         <option name="gradleJvm" value="11" />
         <option name="modules">
