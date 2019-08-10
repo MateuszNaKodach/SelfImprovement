@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/annotation-processing" />
         <option name="gradleHome" value="$USER_HOME$/.sdkman/candidates/gradle/current" />
@@ -19,6 +22,8 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="disableWrapperSourceDistributionNotification" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/eventdriven-springcloudstream" />
@@ -32,6 +37,8 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/functionalprogramming-kotlin-arrow" />
         <option name="gradleJvm" value="12" />
@@ -45,6 +52,8 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/learning-annotations" />
         <option name="gradleJvm" value="11" />
@@ -58,6 +67,8 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/oracletutorial-reflectionapi" />
         <option name="gradleJvm" value="11" />
@@ -71,6 +82,8 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/spring-integration" />
         <option name="gradleHome" value="C:/Program Files/gradle-4.3" />
@@ -84,6 +97,8 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/spring-with-rabbitmq" />
         <option name="gradleHome" value="$USER_HOME$/.sdkman/candidates/gradle/current" />
@@ -97,6 +112,8 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/writingyourownspringbootstarter" />
         <option name="gradleJvm" value="11" />
