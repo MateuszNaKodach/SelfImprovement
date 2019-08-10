@@ -21,8 +21,12 @@ hs_err_pid*
 
 #Gradle Files
 build/
+**/build/
 
 #IntelliJ Settings
 .idea/
+**/.idea/
 
 /tmp
+
+.gradle/

@@ -3,6 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PersonalEducation.iml" filepath="$PROJECT_DIR$/.idea/PersonalEducation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client/PersonalEducation.annotation-processing.annotation-client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client/PersonalEducation.annotation-processing.annotation-client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client/PersonalEducation.annotation-processing.annotation-client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client/PersonalEducation.annotation-processing.annotation-client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-processor/PersonalEducation.annotation-processing.annotation-processor.main.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-processor/PersonalEducation.annotation-processing.annotation-processor.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-processor/PersonalEducation.annotation-processing.annotation-processor.test.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-processor/PersonalEducation.annotation-processing.annotation-processor.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PersonalEducation.spring-integration.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PersonalEducation.spring-integration.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PersonalEducation.spring-integration.test.iml" filepath="$PROJECT_DIR$/.idea/modules/PersonalEducation.spring-integration.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PersonalEducation.writingyourownspringbootstarter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PersonalEducation.writingyourownspringbootstarter.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PersonalEducation.writingyourownspringbootstarter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/PersonalEducation.writingyourownspringbootstarter.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-processing.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-processing.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client/annotation-processing.annotation-client.iml" />
@@ -14,7 +22,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.eventdriven-springcloudstream.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.eventdriven-springcloudstream.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.eventdriven-springcloudstream.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.eventdriven-springcloudstream.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.eventdriven-springcloudstream.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.eventdriven-springcloudstream.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.learning-annotations.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.learning-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.learning-annotations.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.learning-annotations.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.learning-annotations.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.learning-annotations.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/annotation-client/com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-client.iml" filepath="$PROJECT_DIR$/.idea/modules/annotation-client/com.github.nowakprojects.personaleducation.learnannotations.processing.annotation-client.iml" />
@@ -32,7 +39,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.personaleducation.spring-with-rabbitmq.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.personaleducation.spring-with-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.personaleducation.spring-with-rabbitmq.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.personaleducation.spring-with-rabbitmq.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.personaleducation.spring-with-rabbitmq.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.personaleducation.spring-with-rabbitmq.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojects.writingyourownspringbootstarter.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.iml" filepath="$PROJECT_DIR$/.idea/modules/com.github.nowakprojestc.personaleducation.spring-integration.iml" />
@@ -41,6 +47,9 @@
       <module fileurl="file://$PROJECT_DIR$/eventdriven-springcloudstream/eventdriven-springcloudstream.iml" filepath="$PROJECT_DIR$/eventdriven-springcloudstream/eventdriven-springcloudstream.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eventdriven-springcloudstream.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/functionalprogramming-kotlin-arrow.iml" filepath="$PROJECT_DIR$/.idea/modules/functionalprogramming-kotlin-arrow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/functionalprogramming-kotlin-arrow.main.iml" filepath="$PROJECT_DIR$/.idea/modules/functionalprogramming-kotlin-arrow.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/functionalprogramming-kotlin-arrow.test.iml" filepath="$PROJECT_DIR$/.idea/modules/functionalprogramming-kotlin-arrow.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" filepath="$PROJECT_DIR$/.idea/modules/learning-annotations.test.iml" />
@@ -53,6 +62,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-with-rabbitmq/spring-with-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-with-rabbitmq/spring-with-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-with-rabbitmq.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/volounteer-microservice.iml" filepath="$PROJECT_DIR$/.idea/modules/volounteer-microservice.iml" group="volounteer-microservice" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.iml" filepath="$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.test.iml" filepath="$PROJECT_DIR$/.idea/modules/writingyourownspringbootstarter.test.iml" />
