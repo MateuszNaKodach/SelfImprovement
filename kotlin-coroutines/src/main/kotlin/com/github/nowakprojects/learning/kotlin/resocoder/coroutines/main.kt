@@ -5,8 +5,8 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import kotlin.system.measureTimeMillis
 
-fun main() {
-    exampleWithContext()
+fun main(args: Array<String>) {
+    exampleAsyncAwait()
 }
 
 fun delayed(function: () -> Unit) {
@@ -81,6 +81,7 @@ fun exampleLaunchCoroutineScope() = runBlocking {
 
 
 suspend fun calculateHardThings(startNum: Int): Int {
+    println("Calculating hard things on thread: ${Thread.currentThread().name}")
     delay(1000)
     return startNum * 10
 }
