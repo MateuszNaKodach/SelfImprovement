@@ -9,13 +9,14 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven(url = "https://dl.bintray.com/spekframework/spek/")
 }
 
 object Versions{
-    val jUnit = "5.3.2"
-    val assertj = "3.12.2"
-    val assertk = "0.17"
-    val spek = "2.0.5"
+    const val jUnit = "5.3.2"
+    const val assertj = "3.12.2"
+    const val assertk = "0.17"
+    const val spek = "2.0.6"
 }
 
 dependencies {

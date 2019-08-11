@@ -1,7 +1,13 @@
 package com.github.nowakprojects.learning.kotlin.pluralsight.usingcoroutines.part2
 
+import org.spekframework.spek2.Spek
+
 //https://app.pluralsight.com/player?course=kotlin-using-coroutines&author=kevin-jones&name=439068f6-0dd2-4507-bf07-df53c08d9a2a&clip=3&mode=live
 //testowy001@niepodam.pl niepodam123!
 
-internal class SimpleCoroutineTest {
-}
+
+internal class SimpleCoroutineTest : Spek({
+
+
+
+})
