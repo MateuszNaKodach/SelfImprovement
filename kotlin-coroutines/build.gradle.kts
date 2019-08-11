@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.gradle.dsl.Coroutines
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -35,4 +36,8 @@ dependencies {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "12"
+}
+
+kotlin { // type is KotlinJvmProjectExtension
+    experimental.coroutines = Coroutines.ENABLE
 }

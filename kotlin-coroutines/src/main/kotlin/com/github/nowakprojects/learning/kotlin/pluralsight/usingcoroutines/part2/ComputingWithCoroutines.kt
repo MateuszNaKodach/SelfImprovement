@@ -13,6 +13,11 @@ fun main(args: Array<String>) {
     runManyCoroutines()
 }
 
+
+suspend fun doWork(){
+    delay(2000)
+}
+
 fun runManyCoroutines() {
     val result = AtomicInteger()
     for (i in 1..1_500_000) {
