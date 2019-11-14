@@ -1,0 +1,23 @@
+{
+	"blogposts": [
+		{
+			"title": "My first blogpost ever!",
+			"body": "Lorem ipsum dolor sit amet.",
+			"author": "Elke",
+			"datePosted": "2019-01-18"
+		},
+		{
+			"title": "Look I am blogging!",
+			"body": "Hurray for me, this is my second post!",
+			"author": "Elke",
+			"datePosted": "2019-01-19",
+			"highlighted": true
+		},
+		{
+			"title": "Another one?!",
+			"body": "Another one!",
+			"author": "Elke",
+			"datePosted": "2019-01-20"
+		}
+	]
+}
