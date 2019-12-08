@@ -23,12 +23,15 @@
     "@nestjs/common": "^6.7.2",
     "@nestjs/core": "^6.7.2",
     "@nestjs/platform-express": "^6.7.2",
+    "@nestjs/typeorm": "^6.2.0",
     "@types/uuid": "^3.4.6",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.0",
+    "pg": "^7.14.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3",
+    "typeorm": "^0.2.21",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
