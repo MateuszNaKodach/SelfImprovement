@@ -1,1 +1,1 @@
-# Personal-Education
+# Self Improvement Repository (formerly Personal Education)
