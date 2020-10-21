@@ -42,6 +42,8 @@
       <module name="PersonalEducation.annotation-processing.annotation-processor.test" target="11" />
       <module name="PersonalEducation.spring-integration.main" target="1.8" />
       <module name="PersonalEducation.spring-integration.test" target="1.8" />
+      <module name="PersonalEducation.spring-with-rabbitmq.main" target="1.8" />
+      <module name="PersonalEducation.spring-with-rabbitmq.test" target="1.8" />
       <module name="PersonalEducation.writingyourownspringbootstarter.main" target="1.8" />
       <module name="PersonalEducation.writingyourownspringbootstarter.test" target="1.8" />
       <module name="spring-integration.main" target="1.8" />
