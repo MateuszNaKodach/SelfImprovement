@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package zycienakodach.pl;
+
+option go_package = "zycienakodach.pl/selfimprovement/grpc";
+
+message Keyboard {
+  enum Layout {
+    UNKNOWN = 0;
+    QWERTY = 1;
+    QWERTZ = 2;
+    AZERTY = 3;
+  }
+
+  Layout layout = 1;
+  bool backlit = 2;
+}
