@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package zycienakodach.pl;
 
-option go_package = "zycienakodach.pl/selfimprovement/grpc";
+option go_package = ".;pb";
 option java_package = "pl.zycienakodach.selfimprovement.grpc";
 
 message Screen {
