@@ -1,7 +1,11 @@
 import schema from './schema';
 import { handlerPath } from '@libs/handlerResolver';
+import {AWS} from "@serverless/typescript";
 
-export default {
+type ValueOf<T> = T[keyof T];
+
+
+const helloFunction : ValueOf<AWS['functions']> = {
   handler: `${handlerPath(__dirname)}/handler.main`,
   events: [
     {
@@ -16,4 +20,5 @@ export default {
       }
     }
   ]
-}
+};
+export default helloFunction

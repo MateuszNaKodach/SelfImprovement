@@ -27,13 +27,14 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
+      ENV_VARIABLE_2: 'env_var_2'
     },
     lambdaHashingVersion: '20201221',
     profile: 'meetmycode-serverless-admin',
     region: 'eu-central-1'
   },
   // import the function via paths
-  functions: { hello },
+  functions: { helloShortTimeout: {...hello, timeout: 3, memorySize: 128 }, helloLongTimeout: {...hello, timeout: 6, memorySize: 256 } },
 };
 
 module.exports = serverlessConfiguration;

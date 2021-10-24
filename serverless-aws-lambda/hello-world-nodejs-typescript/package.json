@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sls:deploy:stack": "sls deploy --verbose",
     "sls:remove:stack": "sls remove",
-    "sls:deploy:function": "sls deploy function -f hello",
-    "sls:invoke": " sls invoke -f hello -l",
+    "sls:deploy:function:helloShortTimeout": "sls deploy function -f helloShortTimeout",
+    "sls:deploy:function:helloLongTimeout": "sls deploy function -f helloLongTimeout",
+    "sls:invoke:function:helloShortTimeout": " sls invoke -f helloShortTimeout -l",
+    "sls:invoke:function:helloLongTimeout": " sls invoke -f helloLongTimeout -l",
     "sls:logs": "sls logs -f hello -t",
     "sls:invoke:locally": "sls invoke local -f hello --path src/functions/hello/mock.json"
   },
