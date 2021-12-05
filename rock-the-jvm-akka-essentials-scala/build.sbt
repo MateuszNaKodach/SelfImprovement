@@ -2,7 +2,7 @@ name := "rock-the-jvm-akka-essentials-scala"
 
 version := "0.1"
 
-scalaVersion := "3.1.0"
+scalaVersion := "2.13.7"
 
 idePackagePrefix := Some("pl.zycienakodach")
 
