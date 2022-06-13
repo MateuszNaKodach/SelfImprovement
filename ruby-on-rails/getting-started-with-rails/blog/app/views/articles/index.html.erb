@@ -1,0 +1,13 @@
+<h1>Articles#index</h1>
+<p>Find me in app/views/articles/index.html.erb</p>
+<h1>Hello rails!</h1>
+
+<ul>
+  <%
+    @articles.each do |article|
+  %>
+    <li>
+      <a href='/articles/<%= article.id %>'><%= article.title %></a>
+    </li>
+  <% end %>
+</ul>
