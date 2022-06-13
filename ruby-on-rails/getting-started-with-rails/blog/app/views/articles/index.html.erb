@@ -7,7 +7,7 @@
     @articles.each do |article|
   %>
     <li>
-      <a href='/articles/<%= article.id %>'><%= article.title %></a>
+      <%= link_to article.title, article %>">
     </li>
   <% end %>
 </ul>
