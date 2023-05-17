@@ -1,0 +1,15 @@
+<h1>Articles#index</h1>
+<p>Find me in app/views/articles/index.html.erb</p>
+<h1>Hello rails!</h1>
+
+<ul>
+  <%
+    @articles.each do |article|
+  %>
+    <li>
+      <%= link_to article.title, article %>">
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>
