@@ -1,5 +1,5 @@
 <ul>
-  <li>BugSmash</li>
-  <li>Hackathon</li>
-  <li>Kata Camp</li>
+  <% @events.each do |event| %>
+    <li><%= event %></li>
+  <% end %>
 </ul>
