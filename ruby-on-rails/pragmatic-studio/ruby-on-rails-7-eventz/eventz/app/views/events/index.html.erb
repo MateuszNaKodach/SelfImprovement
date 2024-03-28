@@ -6,6 +6,6 @@
       <%= price(event) %>
     </li>
     <p><%= truncate(event.description, length: 35, separator: ' ') %></p>
-    <p><%= event.starts_at.strftime %></p>
+    <p><%= event.starts_at %></p>
   <% end %>
 </ul>
